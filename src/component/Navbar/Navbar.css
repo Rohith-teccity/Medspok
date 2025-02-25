@@ -10,13 +10,13 @@
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; 
-margin-left: 30px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 30px;
 }
 
 .navbar-nav .nav-link:hover {
