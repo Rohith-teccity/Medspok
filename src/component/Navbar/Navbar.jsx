@@ -1,19 +1,49 @@
 import React from "react";
-import "./Navbar.css"; // Import CSS
-import { Link } from "react-router-dom"; // If using React Router
+import "./Navbar.css"; 
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo-container">
-        <img src="./images/Medspok.png" alt="Logo" className="logo" />
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div className="container">
+        {/* Logo */}
+        <Link className="navbar-brand" to="/">
+          <img src="/images/Medspok.png" alt="Logo" className="logo" />
+        </Link>
+
+        {/* Bootstrap Toggle Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Navigation Links */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/service">Service</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/service">Service</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
-      </ul>
     </nav>
   );
 };
