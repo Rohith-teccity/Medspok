@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <Link className="navbar-brand" to="/">
-          <img src="/images/Medspok.png" alt="Logo" className="logo" />
+          <img src="/images/Medspok Logo-05.png" alt="Logo" className="logo" />
         </Link>
 
         {/* Bootstrap Toggle Button */}
