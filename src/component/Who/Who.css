@@ -1,0 +1,142 @@
+/* Full-Screen Black Background */
+.full-screen-container {
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+/* Centering Content */
+h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100px;
+}
+
+hr {
+  width: 429px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #D9D9D9;
+}
+
+p {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.72px;
+}
+
+/* Gradient Button */
+.read-more-btn {
+  background: linear-gradient(90deg, #d8436f, #25308b);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-family: "Open Sans";
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 13px;
+  transition: 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+  background: linear-gradient(90deg, #25308b, #d8436f);
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Responsive Image */
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  h2 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+
+  hr {
+    width: 350px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .img-fluid {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+
+  hr {
+    width: 300px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .img-fluid {
+    max-width: 74%;
+  }
+
+  .full-screen-container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 32px;
+    line-height: 60px;
+  }
+
+  hr {
+    width: 250px;
+    height: 4px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .img-fluid {
+    max-width: 40%;
+  }
+
+  .read-more-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .full-screen-container {
+    padding: 20px;
+    margin-top: 58px;
+  }
+}
