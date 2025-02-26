@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
-  margin-top: 60px;
 }
 
 /* Centering Content */
@@ -137,6 +136,5 @@ p {
 
   .full-screen-container {
     padding: 20px;
-    margin-top: 58px;
   }
 }
