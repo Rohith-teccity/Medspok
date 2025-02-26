@@ -15,10 +15,9 @@
   width: 198px;
 }
 
-/* Navbar Links */
 .navbar-nav .nav-link {
   color: hsl(0, 25%, 94%);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -29,7 +28,8 @@
 /* Gradient Hover Effect */
 .navbar-nav .nav-link:hover {
   background: linear-gradient(90deg, #fbae17, #ee4023);
-  -webkit-background-clip: text;
+  background-clip: text;  /* Standard property */
+  -webkit-background-clip: text; /* For Safari & older browsers */
   -webkit-text-fill-color: transparent;
 }
 
