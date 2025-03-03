@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <Row>
           {/* Column 1 - Image + Paragraph */}
-          <Col md={4} className="footer-col">
+          <Col md={5} className="footer-col">
             <img
               src="/images/Medspok Logo-05.png"
               alt="Company Logo"
@@ -23,7 +23,7 @@ const Footer = () => {
           </Col>
 
           {/* Column 2 - Useful Links */}
-          <Col md={4} className="footer-col">
+          <Col md={3} className="footer-col">
             <h5 className="footer-title">Useful Links</h5>
             <ul className="footer-links">
               <li>
