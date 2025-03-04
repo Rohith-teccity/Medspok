@@ -1,16 +1,19 @@
-import React from "react";
-import Navbar from "./component/Navbar/Navbar";
-import Who from "./component/Who/Who";
-import Footer from "./component/footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import Contact from "./pages/Contact";
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
-      <Who />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    
   );
-};
+}
 
 export default App;
