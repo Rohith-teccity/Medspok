@@ -1,0 +1,82 @@
+.banner {
+    background-image: url("../../images/ServiceBannerImage.png"); /* Adjust path */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:60px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 36px;
+  }
+  
+  .banner-content {
+    max-width: 800px;
+  }
+  
+  .banner h1 {
+    font-size: 4.5rem;
+    line-height: 50px;;
+    margin-bottom: 20px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .banner {
+      height: 350px;
+      padding: 15px;
+    }
+    .banner h1 {
+      font-size: 2rem;
+    }
+    .banner p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      height: 300px;
+      padding: 10px;
+    }
+    .banner h1 {
+        font-size: 2.5rem;
+        line-height: 25px;;
+        margin-bottom: 20px;
+      }
+    .banner p {
+      font-size: 0.7rem;
+      margin: 0px 70px;
+     
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner {
+      height: 350px;
+      padding: 8px;
+      margin-top: 50px;
+    }
+    .banner-content{
+        margin-top: 40px;
+    }
+    .banner h1 {
+      font-size: 1.5rem;
+      line-height: 13px;
+      margin-bottom: 20px;
+    }
+    .banner p {
+      font-size: 0.8rem;
+      margin: 0px 20px;
+    }
+  }
+  
