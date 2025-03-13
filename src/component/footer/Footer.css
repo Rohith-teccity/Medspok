@@ -1,0 +1,123 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    font-family:"Open Sans";
+}
+
+/* Footer columns alignment */
+.footer-col {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footer-p{
+    font-size: 1.25rem;
+}
+/* Logo */
+.footer-logo {
+    width: 180px;
+    margin-bottom: 8px;
+}
+
+/* Section Titles */
+.footer-title {
+    color: #FFC700;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+    letter-spacing: 0.96px;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Text */
+.footer-copyright {
+    color: #FFF;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 150% */
+letter-spacing: 0.8px;
+}
+
+/* ✅ Responsive Design */
+
+/* 🌐 For Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+    .footer {
+        padding: 30px 0;
+    }
+    .footer-col {
+        text-align: center; /* Center content */
+    }
+    .footer-links {
+        font-size: 1.1rem;
+    }
+}
+
+/* 📱 For Small Tablets & Large Phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 150px; /* Reduce logo size */
+    }
+    .footer-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .footer-links {
+        font-size: 1rem;
+    }
+    .footer-p {
+        font-size: 1rem;
+    }
+    .footer-copyright {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* 📱 For Mobile Phones (max-width: 576px) */
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 0;
+    }
+    .footer-logo {
+        width: 120px; /* Reduce logo size further */
+    }
+    .footer-title {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    .footer-links {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    .footer-p {
+        font-size: 0.95rem;
+        line-height: 1;
+    
+    }
+    .footer-copyright {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+}

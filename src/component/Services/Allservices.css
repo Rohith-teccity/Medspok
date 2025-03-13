@@ -1,0 +1,215 @@
+/* Main container */
+.all-services {
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url("images/servicepageimg.png"), linear-gradient(180deg, #000 0%, #0E0E0E 100%);
+background-color: lightgray;
+background-position: 50%;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+/* Title */
+.services-title {
+  color: #00D8FF;
+font-family: "Open Sans";
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 46.875% */
+margin-bottom: 30px;
+}
+
+/* Subtitle with icons */
+.services-subtitle {  
+  margin-bottom: 30px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 142.857% */
+}
+
+/* Small icon images on both sides */
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual Service Card */
+.service-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.02); /* Subtle hover effect */
+}
+
+/* Service Image */
+.service-img {
+  width: 120px;
+  height:350px; /* Tall vertical size */
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Service Content */
+.service-content h2 {
+  color: #FFF;
+font-family: "Open Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 50px; /* 166.667% */
+}
+
+.service-content p {
+  color: #FFF;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 177.778% */
+}
+
+/* Responsive Design */
+
+/* 📌 Medium Screens (max-width: 991px) */
+@media (max-width: 991px) {
+  .services-title {
+    font-size: 2.2rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .services-grid {
+    gap: 20px; /* Reduce space between items */
+  }
+
+  .service-card {
+    padding: 12px;
+  }
+
+  .service-img {
+    width: 100px;
+    height: 160px;
+    margin-right: 15px;
+  }
+
+  .service-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 📌 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* ✅ Switch to 1 column per row */
+  }
+
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .service-img {
+    width: 120px;
+    height: 160px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .service-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-content p {
+    font-size: 1rem;
+  }
+}
+
+/* 📌 Mobile Screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .services-subtitle {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* ✅ 1 column per row */
+    gap: 15px;
+  }
+
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .service-img {
+    width: 80px;
+    height: 150px;
+    margin-bottom: 8px;
+  }
+
+  .service-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .service-content p {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+}

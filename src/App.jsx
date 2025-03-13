@@ -1,13 +1,19 @@
-import React from "react";
-import Navbar from "./component/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import Contact from "./pages/Contact";
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
-      <h1 style={{ marginTop: "80px", textAlign: "center" }}>Welcome to Medspok</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    
   );
-};
+}
 
 export default App;
